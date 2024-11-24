@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Conexión a MongoDB utilizando Mongoose
-const DB = process.env.DB;
+const DB = 'mongodb+srv://Astrophel:Ea2cd5wx4gOXlp3V@clusterap.dxn5b.mongodb.net/?retryWrites=true&w=majority&appName=ClusterAP';
 mongoose.connect(DB, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
